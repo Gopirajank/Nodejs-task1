@@ -3,7 +3,6 @@ const getContacts = asyncHandler (async(req,res) => {
     res.status(200).json({message:require("../mocks/mocks.json")});
 });
 
-
 const createContact = asyncHandler (async(req,res) => {
     console.log("the request body is:",req.body);
     const {name,email,mob} =req.body;
